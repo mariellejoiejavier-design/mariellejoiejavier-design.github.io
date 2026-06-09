@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+}
+
+header{
+    background:#ffffff;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#8c6ff7;
+}
+
+nav a{
+    text-decoration:none;
+    margin-left:25px;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#8c6ff7;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:50px;
+    padding:50px 10%;
+}
+
+.hero img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid #8c6ff7;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.hero-content{
+    max-width:500px;
+}
+
+.hero-content h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero-content span{
+    color:#8c6ff7;
+}
+
+.hero-content p{
+    margin:20px 0;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#8c6ff7;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:35px;
+    color:#8c6ff7;
+}
+
+.about-box,
+.contact-box{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.works-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.work-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#8c6ff7;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PoRtFolio</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <img src="440415153_122136590882027758_4798031378677385438_n.jpg" alt="Profile Picture">
+
+    <div class="hero-content">
+        <h1>Hello, I'm <span>Marielle Joie Javier </span></h1>
+        <p>
+            Welcome to my personal portfolio website. I am passionate about
+            creativity, technology, and learning new things. Explore my works
+            and feel free to contact me.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-box">
+        <p>
+            Hi! I'm Marielle. I enjoy singing, dancing, reading manga/manhwa, playing online games,
+            and exploring new things in technology. I am currently studying Information Technology, 
+            where I am learning more about programming, web development, and how systems work behind the scenes.
+            I’m continuously improving my skills and trying to become more confident in coding and creating 
+            projects. I also like challenging myself with new tasks so I can grow and develop my abilities in this
+            field.
+        </p>
+    </div>
+</section>
+
+<section id="works">
+    <h2 class="section-title">My Works</h2>
+
+    <div class="work-card">
+    <h3>Dog Adoption System</h3>
+    <p>A database-based system with admin, adopter, and poster roles for managing dog adoption records.</p>
+</div>
+
+<div class="work-card">
+    <h3>Student Attendance System</h3>
+    <p>A Java OOP system that tracks student attendance using classes and objects.</p>
+</div>
+
+<div class="work-card">
+    <h3>Quiz Application</h3>
+    <p>A simple multiple-choice quiz program with scoring and result display.</p>
+</div>
+
+<div class="work-card">
+    <h3>Book Management System</h3>
+    <p>A login-based system for managing books using Java OOP concepts.</p>
+</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+
+   <div class="contact-box">
+    <p><strong>Email:</strong> mariellejoiejavier@gmail.com</p>
+
+    <p>
+        <strong>Facebook:</strong>
+        <a href="https://www.facebook.com/marielle.joie.javier.2024/" target="_blank">
+            Marielle Joie Javier
+        </a>
+    </p>
+
+    <p><strong>Phone:</strong> 09460478744</p>
+ </div>
+</section>
+
+<footer>
+    © 2026 Marielle Portfolio. All Rights Reserved.
+</footer>
+
+</body>
+</html>
